@@ -1,0 +1,5 @@
+--main-sky-blue: #34c9b6;
+--grey: #f3f1f1;
+--white: #ffffff;
+--light-green: #e6f7fc;
+--green: #57bd5e;

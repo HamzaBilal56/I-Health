@@ -1,0 +1,399 @@
+* {
+    scroll-behavior: smooth;
+}
+:root {
+    --main-sky-blue: #34c9b6;
+    --grey: #f3f1f1;
+    --white: #ffffff;
+    --light-green: #e6f7fc;
+    --green: #57bd5e;
+}
+/* ===UPPER INFO BAR STYLES=== */
+.upper-info-bar {
+    background-color: var(--main-sky-blue);
+    color: var(--white);
+    padding: 16px 0;
+}
+
+/* ====HERO SECTION STYLES===== */
+.hero-section-wrapper {
+    position: relative;
+    z-index: -2;
+}
+.hero-section-content {
+    position: absolute;
+    width: 55%;
+    top: 50%;
+    left: 22%;
+    transform: translate(-22%, -50%);
+}
+.hero-section-content h2 {
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 40px;
+}
+.hero-section-content h2 span {
+    color: var(--green);
+}
+.home-image-btn-wrapper a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+}
+.home-image-btn-wrapper a:first-child {
+    background-color: var(--green);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 18px;
+    margin-right: 12px;
+}
+.home-image-btn-wrapper a:last-child {
+    background-color: var(--main-sky-blue);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 18px;
+}
+
+/*==== HOME ABOUT CARDS STYLES==== */
+.home-about-info-cards {
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey);
+    padding: 24px 0;
+    border-radius: 6px;
+    transition: all .45s ease;
+    margin-top: -30px;
+}
+.home-about-info-cards:hover {
+    background-color: var(--main-sky-blue);
+}
+.home-about-info-cards i {
+    margin-right: 15px;
+    font-size: 25px;
+    color: var(--green);
+}
+.home-about-info-cards p {
+    margin-bottom: 0;
+}
+/* =====ABOUT US SECTION STYLES====== */
+.about-us-wrapper .about-us-content-wrapper {
+    width: 55%;
+}
+.about-us-wrapper .about-us-images {
+    width: 45%; 
+}
+.about-us-images img:first-child {
+    width: 90%;
+    border-radius: 6px;
+}
+.about-us-images img:nth-child(2) {
+    width: 45%;
+    border-radius: 6px;
+    margin: 9px 6px 0 0;
+}
+.about-us-images img:nth-child(3) {
+    width: 40%;
+    border-radius: 6px;
+    margin-top: -80px;
+}
+.about-us-content-wrapper {
+    align-items: center;
+}
+.about-us-content h2 span {
+    color: var(--green);
+}
+.about-us-btns-wrapper a:first-child {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 8px 15px;
+    border: none;
+    border-radius: 18px;
+    text-decoration: none;
+    margin-right: 12px;
+}
+.about-us-btns-wrapper a:last-child {
+    background-color: var(--main-sky-blue);
+    color: var(--white);
+    padding: 8px 15px;
+    border: none;
+    border-radius: 18px;
+    text-decoration: none;
+}
+
+/* =====OUR MISSION SECTION STYLES===== */
+.our-mission-section-wrapper {
+    background-color: var(--grey);
+    display: flex;
+}
+.our-mission-section-wrapper .our-mission-text-wrapper {
+    width: 60%;
+    padding-left: 70px;
+}
+.our-mission-section-wrapper .our-missin-video {
+    width: 40%;
+}
+.our-mission-text-wrapper h2 span {
+    color: var(--green);
+}
+.our-mission-text-wrapper ul {
+    padding: 0;
+    margin-bottom: 0;
+}
+.our-mission-text-wrapper ul li {
+    list-style-type: none;
+}
+.our-mission-text-wrapper ul li:hover {
+    color: var(--green);
+}
+
+/* ======OUR SERVICES SECTION STYLES====== */
+.services-upper-text-wrapper {
+    text-align: center;
+}
+.services-upper-text-wrapper h2 span {
+    color: var(--green);
+}
+.service-card {
+    background-color: var(--light-green);
+    margin-top: 18px;
+    text-align: center;
+    padding: 20px 18px;
+    border: none;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+.service-card:hover {
+    background-color: var(--main-sky-blue);
+    color: var(--white);
+}
+.service-card p {
+    margin-bottom: 0;
+}
+
+/* ====DOCTORS TEAM SECTION STYELS==== */
+.doctors-team-section-wrapper {
+    background-color: var(--main-sky-blue);
+    margin: 35px 0 50px 0;
+}
+.doctors-team-upper-text {
+    text-align: center;
+    color: var(--white);
+    padding: 30px 0 24px 0;
+}
+.team-dr-content img {
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+}
+.doctor-team-img-caption {
+    background-color: var(--green);
+    border-radius: 0 0 6px 6px;
+    padding: 12px 6px;
+    justify-content: space-between;
+    align-items: center;
+}
+.doctor-team-img-caption p, .doctor-team-img-caption h5 {
+    color: var(--white);
+}
+.doctor-team-img-caption h5 {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+.doctor-team-img-caption p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.doctor-profile-btn a {
+    text-decoration: none;
+    background-color: var(--white);
+    color: var(--green);
+    padding: 10px;
+    border: none;
+    border-radius: 18px;
+    font-size: 14px;
+}
+
+/* ====HOME CONTACT SECTION STYLES==== */
+.home-contact-section-wrapper {
+    background-color: var(--grey);
+}
+.home-contact-form {
+    background-color: var(--white);
+    width: 55%;
+    border-radius: 10px;
+    padding: 20px 12px;
+}
+.home-contact-form h3 {
+    text-align: center;
+}
+.home-contact-form h3 span {
+    color: var(--green);
+}
+.home-contact-section-wrapper form {
+    display: flex;
+    margin-top: 20px;
+}
+form input, form textarea {
+    background-color: var(--grey);
+    border: none;
+    border-radius: 6px;
+    padding: 5px 8px;
+}
+form input {
+    margin-bottom: 26px;
+}
+form textarea {
+    resize: none;
+}
+.user-info-form p {
+    margin-top: 5px;
+}
+.message-form .form-submit {
+    background-color: var(--green) !important;
+    color: var(--white);
+    border-radius: 20px;
+    padding: 5px 12px;
+    margin-top: 18px;
+}
+.i-health-info {
+    width: 45%;
+    padding-left: 24px;
+}
+
+
+/* ====CLIENT TESTOMINAL SECTION STYLES==== */
+.client-testominal-upper-text {
+    text-align: center;
+}
+.client-testominal-upper-text h2 span {
+    color: var(--green);
+}
+.patient-review-card {
+    background-color: var(--light-green);
+    padding: 24px 18px;
+    border: none;
+    border-radius: 8px;
+    transition: all .45s ease;
+    margin-top: 18px;
+}
+.patient-review-card:hover {
+    background-color: var(--main-sky-blue);
+    transform: translateY(-6px);
+}
+.patient-review-card:hover p, .patient-review-card:hover h5 {
+    color: var(--white);
+}
+.patient-review-card:hover .patient-info i {
+    color: var(--white);
+}
+.patient-info {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.patient-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.patient-info h5, .patient-info p {
+    margin-bottom: 0;
+}
+.patient-info i {
+    font-size: 60px;
+    color: var(--green);
+}
+.patient-ratting {
+    text-align: center;
+}
+.patient-ratting i {
+    color: gold;
+    padding: 0 3px;
+}
+
+/* ====OUR BLOG SECTION STYLES==== */
+.our-blog-section-wrapper {
+    background-color: var(--grey);
+}
+.our-blog-upper-text {
+    text-align: center;
+}
+.our-blog-upper-text h2 span {
+    color: var(--green);
+}
+.blog-card {
+    position: relative;
+    margin-top: 24px;
+}
+.blog-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+.blog-card-cap button {
+    position: absolute;
+    background-color: var(--green);
+    color: var(--white);
+    bottom: 48%;
+    right: 5%;
+    transform: translateY(-48%);
+    border-radius: 12px;
+    padding: 3px 12px;
+    border: none;
+
+}
+.blog-card-cap h5, .blog-card-cap p {
+    padding: 0 0 0 16px;
+}
+.blog-card-cap a {
+    text-decoration: none;
+    color: black;
+    margin-top: 12px;
+    display: inline-block;
+}
+.blog-card-cap h5:hover {
+    color: var(--green);
+}
+
+/* ====FOOTER STYLES==== */
+.main-footer {
+    background-color: var(--main-sky-blue);
+    padding: 50px 0 30px 0;
+}
+.main-footer h5 {
+    color: var(--white);
+    margin-bottom: 24px;    
+}
+.main-footer ul {
+    padding: 0;
+}
+.main-footer ul li {
+    list-style-type: none;
+    color: var(--white);
+    margin-bottom: 6px;
+}
+.footer-clinic-timming {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 12px 0 10px 8px;
+}
+.footer-clinic-timming ul li, .footer-clinic-timming h5 {
+    color: black;
+}
+.footer-clinic-timming ul li {
+    font-size: 12px;
+}
+.copy-right-text {
+    display: flex;
+    justify-content: center;
+}
+.copy-right-text p {
+    margin-bottom: 0;
+    color: var(--white);
+    padding-top: 24px;
+}
+
+/* ===========Generic Properties========== */
+.container-my {
+    width: 800px;
+    margin: 0 auto;
+}
