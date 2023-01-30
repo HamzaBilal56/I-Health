@@ -1,0 +1,143 @@
+* {
+    scroll-behavior: smooth;
+}
+:root {
+    --main-sky-blue: #34c9b6;
+    --grey: #f3f1f1;
+    --white: #ffffff;
+    --light-green: #e6f7fc;
+    --green: #57bd5e;
+}
+/* ===UPPER INFO BAR STYLES=== */
+.upper-info-bar {
+    background-color: var(--main-sky-blue);
+    color: var(--white);
+    padding: 16px 0;
+}
+
+/* ====HOME SECTION STYLES==== */
+.appointment-home-img {
+    position: relative;
+}
+.appointment-home-img::after {
+    position: absolute;
+    content: "";
+    background-color: rgba(67, 65, 65, 0.556);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.appointment-home-img figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.appointment-home-img figcaption h1, .appointment-home-img figcaption a, .appointment-home-img figcaption p {
+    color: var(--white);
+    text-align: center;
+}
+.appointment-home-img figcaption a {
+    text-decoration: none;
+}
+
+/* ===MEET OUR DOCTORS SECTION STYLE=== */
+.meet-our-doctor-section-wrapper {
+    align-items: center;
+}
+.meet-our-doctor-section-wrapper .meet-doctor-text-wrapper {
+    width: 55%;
+    padding-left: 100px;
+}
+.meet-our-doctor-section-wrapper .meet-doctor-images {
+    width: 45%;
+}
+.meet-doctor-images img {
+    border-radius: 8px;
+}
+.meet-doctors-btns a:first-child {
+    background-color: var(--green);
+    color: var(--white);
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 16px;
+    margin-right: 18px;
+}
+.meet-doctors-btns a:last-child {
+    background-color: var(--main-sky-blue);
+    color: var(--white);
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 16px;
+}
+
+/* ====APPOINTMENT SECTION STYLES==== */
+.appointment-form-wrapper {
+    background-color: var(--grey);
+}
+.container-my .appointment-contact-form {
+    background-color: var(--white);
+    width: 60%;
+    border-radius: 10px;
+    padding: 20px 12px;
+}
+.appointment-contact-form h3 {
+    text-align: center;
+}
+.appointment-contact-form h3 span {
+    color: var(--green);
+}
+.appointment-contact-form form {
+    display: flex;
+    margin-top: 20px;
+}
+form input, form textarea {
+    background-color: var(--grey);
+    border: none;
+    border-radius: 6px;
+    padding: 5px 8px;
+}
+form input {
+    margin-bottom: 26px;
+}
+form textarea {
+    resize: none;
+}
+.user-info-form p {
+    margin-top: 5px;
+}
+.message-form .form-submit {
+    background-color: var(--green) !important;
+    color: var(--white);
+    border-radius: 20px;
+    padding: 5px 12px;
+    margin-top: 18px;
+}
+
+.container-my .our-experties-section-wrapper {
+    margin-left: 50px;
+    width: 40%;
+}
+.experties-card {
+    background-color: var(--white);
+    color: black;
+    padding: 18px 12px;
+    margin-top: 12px;
+}
+.experties-card p {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+/* ===GENERIC CLASSES=== */
+.container-my {
+    width: 800px;
+    margin: 0 auto;
+}

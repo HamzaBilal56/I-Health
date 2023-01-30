@@ -1,0 +1,118 @@
+* {
+    scroll-behavior: smooth;
+}
+:root {
+    --main-sky-blue: #34c9b6;
+    --grey: #f3f1f1;
+    --white: #ffffff;
+    --light-green: #e6f7fc;
+    --green: #57bd5e;
+}
+/* ===UPPER INFO BAR STYLES=== */
+.upper-info-bar {
+    background-color: var(--main-sky-blue);
+    color: var(--white);
+    padding: 16px 0;
+}
+
+/* ====HOME SECTION STYLES==== */
+.contact-home-img {
+    position: relative;
+}
+.contact-home-img::after {
+    position: absolute;
+    content: "";
+    background-color: rgba(67, 65, 65, 0.556);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.contact-home-img figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.contact-home-img figcaption h1, .contact-home-img figcaption a, .contact-home-img figcaption p {
+    color: var(--white);
+    text-align: center;
+}
+.contact-home-img figcaption a {
+    text-decoration: none;
+}
+
+/* ====CONTACT CARDS STYLES==== */
+.contact-card {
+    background-color: var(--grey);
+    padding: 30px 12px;
+    text-align: center;
+    border-radius: 8px;
+    transition: all .45s ease;
+    margin-top: 50px;
+}
+.contact-card:hover {
+    background-color: var(--main-sky-blue);
+    transform: translateY(10px);
+}
+.contact-card:hover p, .contact-card:hover h5 {
+    color: var(--white);
+}
+.contact-card p {
+    margin-bottom: 0;
+}
+
+/* ===MAP SECTION STYLES=== */
+.container-my iframe {
+    width: 100%;
+    border-radius: 6px;
+    margin: 30px 0;
+}
+
+/* ====FOOTER STYLES==== */
+.main-footer {
+    background-color: var(--main-sky-blue);
+    padding: 50px 0 30px 0;
+}
+.main-footer h5 {
+    color: var(--white);
+    margin-bottom: 24px;    
+}
+.main-footer ul {
+    padding: 0;
+}
+.main-footer ul li {
+    list-style-type: none;
+    color: var(--white);
+    margin-bottom: 6px;
+}
+.footer-clinic-timming {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 12px 0 10px 8px;
+}
+.footer-clinic-timming ul li, .footer-clinic-timming h5 {
+    color: black;
+}
+.footer-clinic-timming ul li {
+    font-size: 12px;
+}
+.copy-right-text {
+    display: flex;
+    justify-content: center;
+}
+.copy-right-text p {
+    margin-bottom: 0;
+    color: var(--white);
+    padding-top: 24px;
+}
+
+
+
+
+/* ====GENERIC CLASSES==== */
+.container-my {
+    width: 800px;
+    margin: 0 auto;
+}
