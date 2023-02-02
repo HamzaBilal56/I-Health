@@ -20,6 +20,9 @@
     position: relative;
     z-index: -2;
 }
+.hero-section-wrapper img {
+    width: 100%;
+}
 .hero-section-content {
     position: absolute;
     width: 55%;
@@ -396,4 +399,147 @@ form textarea {
 .container-my {
     width: 800px;
     margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 400px) {
+    img {
+        width: 100%;
+    }
+    .hero-section-content h2 {
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .hero-section-content p {
+        font-size: 8px;
+    }
+    .hero-section-content a {
+        font-size: 8px;
+    }
+    .about-us-wrapper {
+        display: block;
+    }
+
+    
+}
+
+@media (max-width: 600px) {
+    .about-us-wrapper {
+        display: block !important;
+    }
+    .about-us-wrapper .about-us-images{
+        width: 100%;
+        padding: 0 auto;
+    }
+    .about-us-images img:first-child {
+        width: 100%;
+        border-radius: 6px;
+    }
+    .about-us-wrapper .about-us-content-wrapper {
+        width: 100%;
+        padding: 20px 0 0 24px;
+    }
+
+}
+
+@media (max-width: 782px) {
+    img {
+        width: 100%;
+    }
+    
+
+    .container-my .home-about-info-cards {
+        width: 100%;
+        margin-top: 24px;
+    }
+    .hero-section-content h2 {
+        margin-bottom: 0;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .hero-section-content p {
+        font-size: 12px;
+    }
+    .hero-section-content a {
+        font-size: 12px;
+    }
+    .home-about-info-cards {
+        width: 100%;
+    }
+
+    
+}
+
+@media (max-width: 575.98% ) {
+    .footer .footer-departments, .footer .footer-clinic-timming, .footer .footer-services, .footer .footer-links {
+        margin: 0 24px;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    .upper-info-bar  {
+        display: none !important;
+    }
+    /* .team-dr-content {
+        width: 70%;
+        margin: 12px auto;
+    }
+    .team-dr-content img {
+        width: 100%;
+    } */
+
+    .patient-review-card {
+        display: block;
+        width: 100%;
+    }
+    .patient-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        text-align: center;
+    }
+    .patient-info i {
+        display: none;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .upper-info-bar p {
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 1199.98px) {
+
+}
+
+@media (max-width: 540.98px) {
+    .footer {
+        display: block;
+    }
+    .footer .footer-departments, .footer .footer-clinic-timming, .footer .footer-services, .footer .footer-links {
+        width: 50%;
+        margin: 0 auto;
+        /* transform: translateY(-50%); */
+    }
+    .footer .footer-clinic-timming {
+        transform: translateX(-54%);
+        width: 30%;
+    }
+    .footer .footer-clinic-timming h5, .footer .footer-clinic-timming ul li {
+        padding-left: 38px;
+    }
+}
+
+@media (max-width: 869.98px) {
+    
 }
