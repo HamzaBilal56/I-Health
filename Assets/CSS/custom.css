@@ -1,5 +1,6 @@
 * {
     scroll-behavior: smooth;
+    letter-spacing: 1px;
 }
 :root {
     --main-sky-blue: #34c9b6;
@@ -14,6 +15,46 @@
     color: var(--white);
     padding: 16px 0;
 }
+
+/* ===NAVBAR STYLES=== */
+nav {
+    background-color: var(--white);
+}
+
+.container-bar {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 5px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 9px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -9px) rotate(45deg);
+  }
+
+#sub-menu {
+    padding: 12px 20px;
+    display: none;
+}
+#sub-menu li {
+    display: block;
+}
+
 
 /* ====HERO SECTION STYLES===== */
 .hero-section-wrapper {
@@ -42,17 +83,16 @@
     text-decoration: none;
     color: var(--white);
     font-size: 14px;
+    padding: 8px 16px;
 }
 .home-image-btn-wrapper a:first-child {
     background-color: var(--green);
-    padding: 8px 16px;
     border: none;
     border-radius: 18px;
     margin-right: 12px;
 }
 .home-image-btn-wrapper a:last-child {
     background-color: var(--main-sky-blue);
-    padding: 8px 16px;
     border: none;
     border-radius: 18px;
 }
@@ -144,6 +184,9 @@
 }
 .our-mission-text-wrapper ul li {
     list-style-type: none;
+}
+.our-mission-text-wrapper ul li p i {
+    color: var(--main-sky-blue) !important;
 }
 .our-mission-text-wrapper ul li:hover {
     color: var(--green);
@@ -397,7 +440,7 @@ form textarea {
 
 /* ===========Generic Properties========== */
 .container-my {
-    width: 800px;
+    width: 900px;
     margin: 0 auto;
 }
 
@@ -408,138 +451,93 @@ form textarea {
 
 
 
-
-@media (max-width: 400px) {
-    img {
-        width: 100%;
-    }
-    .hero-section-content h2 {
-        margin-bottom: 0;
-        font-weight: 600;
-        font-size: 15px;
-    }
-    .hero-section-content p {
-        font-size: 8px;
-    }
-    .hero-section-content a {
-        font-size: 8px;
-    }
-    .about-us-wrapper {
-        display: block;
-    }
-
-    
-}
-
-@media (max-width: 600px) {
-    .about-us-wrapper {
-        display: block !important;
-    }
-    .about-us-wrapper .about-us-images{
-        width: 100%;
-        padding: 0 auto;
-    }
-    .about-us-images img:first-child {
-        width: 100%;
-        border-radius: 6px;
-    }
-    .about-us-wrapper .about-us-content-wrapper {
-        width: 100%;
-        padding: 20px 0 0 24px;
-    }
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
 
 }
 
-@media (max-width: 782px) {
-    img {
-        width: 100%;
-    }
-    
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
 
-    .container-my .home-about-info-cards {
-        width: 100%;
-        margin-top: 24px;
-    }
-    .hero-section-content h2 {
-        margin-bottom: 0;
-        font-weight: 500;
-        font-size: 20px;
-    }
-    .hero-section-content p {
-        font-size: 12px;
-    }
-    .hero-section-content a {
-        font-size: 12px;
-    }
-    .home-about-info-cards {
-        width: 100%;
-    }
-
-    
 }
 
-@media (max-width: 575.98% ) {
-    .footer .footer-departments, .footer .footer-clinic-timming, .footer .footer-services, .footer .footer-links {
-        margin: 0 24px;
-    }
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
 }
 
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+}
+
+
+
+
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-
-    .upper-info-bar  {
-        display: none !important;
-    }
-    /* .team-dr-content {
-        width: 70%;
-        margin: 12px auto;
-    }
-    .team-dr-content img {
-        width: 100%;
-    } */
-
-    .patient-review-card {
-        display: block;
-        width: 100%;
-    }
-    .patient-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center !important;
-        text-align: center;
-    }
-    .patient-info i {
+    .upper-info-bar {
         display: none;
     }
 }
 
+/* `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
     .upper-info-bar p {
-        font-size: 12px !important;
+        font-size: 14px;
     }
 }
 
+/* `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
 
 }
 
-@media (max-width: 540.98px) {
-    .footer {
-        display: block;
+@media (max-width: 879.98px) {
+    .hero-section-content h2 {
+        font-size: 25px;
     }
-    .footer .footer-departments, .footer .footer-clinic-timming, .footer .footer-services, .footer .footer-links {
-        width: 50%;
-        margin: 0 auto;
-        /* transform: translateY(-50%); */
+    .hero-section-content {
+        font-size: 15px;
     }
-    .footer .footer-clinic-timming {
-        transform: translateX(-54%);
-        width: 30%;
-    }
-    .footer .footer-clinic-timming h5, .footer .footer-clinic-timming ul li {
-        padding-left: 38px;
+    .home-image-btn-wrapper a {
+        font-size: 13px;
+        padding: 4px 10px;
     }
 }
+@media (max-width: 699.98px) {
+    .hero-section-content h2 {
+        font-size: 22px;
+    }
+    .hero-section-content {
+        font-size: 13px;
+    }
+    .home-image-btn-wrapper a {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
+@media (max-width: 499.98px) {
+    .hero-section-content h2 {
+        font-size: 18px;
+    }
+    .hero-section-content {
+        font-size: 11px;
+    }
+    .home-image-btn-wrapper a {
+        font-size: 9px;
+        padding: 3px 6px;
+    }
 
-@media (max-width: 869.98px) {
-    
 }
