@@ -15,6 +15,11 @@
     padding: 16px 0;
 }
 
+/* ===NAVBAR STYLES=== */
+nav {
+    background-color: var(--white);
+}
+
 /* ====HOME SECTION STYLES==== */
 .services-home-img {
     position: relative;
@@ -167,6 +172,49 @@
 
 /* ===GENERIC CLASSES=== */
 .container-my {
-    width: 800px;
+    width: 80%;
     margin: 0 auto;
+}
+
+
+
+
+
+@media (max-width: 575.98px) {
+
+}
+
+@media (max-width: 767.98px) {
+    .container-my {
+        width: 100%;
+    }
+
+    .upper-info-bar {
+        display: none;
+    }
+
+    .our-services-cards-wrapper {
+        padding: 0 12px;
+    }
+
+    .feature-card {
+        padding: 0 24px;
+    }
+
+    .row .footer-departments, .row .footer-services, .row .footer-links, .row .footer-clinic-timming {
+        padding: 12px 24px;
+    }
+    .row .footer-clinic-timming {
+        width: 50%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .upper-info-bar p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+
 }

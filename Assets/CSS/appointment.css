@@ -15,6 +15,11 @@
     padding: 16px 0;
 }
 
+/* ===NAVBAR STYLES=== */
+nav {
+    background-color: var(--white);
+}
+
 /* ====HOME SECTION STYLES==== */
 .appointment-home-img {
     position: relative;
@@ -125,11 +130,58 @@ form textarea {
     color: black;
     padding: 18px 12px;
     margin-top: 12px;
+    transition: all .45s ease;
+}
+.experties-card:hover {
+    background-color: var(--green);
+    color: var(--white);
 }
 .experties-card p {
     margin-bottom: 0;
 }
 
+/* ===APPOINTMENT VIDEO WRAPPER=== */
+.appointment-video-wrapper video {
+    margin-bottom: -40px;
+}
+
+/* ====FOOTER STYLES==== */
+.main-footer {
+    background-color: var(--main-sky-blue);
+    padding: 50px 0 30px 0;
+}
+.main-footer h5 {
+    color: var(--white);
+    margin-bottom: 24px;    
+}
+.main-footer ul {
+    padding: 0;
+}
+.main-footer ul li {
+    list-style-type: none;
+    color: var(--white);
+    margin-bottom: 6px;
+}
+.footer-clinic-timming {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 12px 0 10px 8px;
+}
+.footer-clinic-timming ul li, .footer-clinic-timming h5 {
+    color: black;
+}
+.footer-clinic-timming ul li {
+    font-size: 12px;
+}
+.copy-right-text {
+    display: flex;
+    justify-content: center;
+}
+.copy-right-text p {
+    margin-bottom: 0;
+    color: var(--white);
+    padding-top: 24px;
+}
 
 
 
@@ -140,4 +192,57 @@ form textarea {
 .container-my {
     width: 800px;
     margin: 0 auto;
+}
+
+
+
+@media (max-width: 575.98px) {
+
+}
+
+@media (max-width: 767.98px) {
+    .container-my {
+        width: 100% !important;
+    }
+
+    .upper-info-bar {
+        display: none;
+    }
+
+    .appointment-form-wrapper .container-my {
+        display: block !important;
+    }
+    /* .container-my .appointment-contact-form-wrapper {
+        margin: 12px auto !important;
+    } */
+    .appointment-contact-form {
+        width: 100% !important;
+    }
+    .appointment-contact-form form {
+        display: block !important;
+        width: 80% !important;
+        text-align: center;        
+    }
+    .our-experties-section-wrapper {
+        margin: 18px 0;
+        width: 100% !important;
+    }
+    .experties-card {
+        width: 80% !important;
+        margin: 12px auto !important;
+    }
+
+    .main-footer {
+        padding: 12px 24px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .upper-info-bar p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+
 }

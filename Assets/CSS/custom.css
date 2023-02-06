@@ -170,7 +170,7 @@ nav {
 }
 .our-mission-section-wrapper .our-mission-text-wrapper {
     width: 60%;
-    padding-left: 70px;
+    padding-left: 90px;
 }
 .our-mission-section-wrapper .our-missin-video {
     width: 40%;
@@ -190,6 +190,12 @@ nav {
 }
 .our-mission-text-wrapper ul li:hover {
     color: var(--green);
+}
+.our-missin-video {
+    align-items: center;
+}
+.our-missin-video video {
+    width: 100%;
 }
 
 /* ======OUR SERVICES SECTION STYLES====== */
@@ -440,7 +446,7 @@ form textarea {
 
 /* ===========Generic Properties========== */
 .container-my {
-    width: 900px;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -482,13 +488,70 @@ form textarea {
 
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-
+    .main-footer .footer-departments, .main-footer .footer-services, .main-footer .footer-links, .main-footer .footer-clinic-timming {
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+    
 }
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .container-my {
+        width: 100%;
+    }
+
     .upper-info-bar {
         display: none;
+    }
+
+
+    .home-about-mid-cards-wrapper {
+        padding: 0 50px;
+    }
+    .home-about-info-cards {
+        margin-top: 24px;
+    }
+
+    .about-us-wrapper {
+        display: block !important;
+    }
+    .about-us-wrapper .about-us-images {
+        width: 90% !important;
+    }
+    .about-us-wrapper .about-us-content-wrapper {
+        width: 100% !important;
+        padding: 24px 0 0 35px;
+    }
+
+    .client-testominal-cards-wrapper {
+        padding: 0 50px;
+    }
+    .patient-info h5 {
+        font-size: 16px;
+    }
+    .patient-info p {
+        font-size: 13px;
+    }
+    .patient-info i {
+        font-size: 40px;
+    }
+
+
+
+    .our-services-cards-wrapper {
+        padding: 0 12px;
+    }
+
+    .team-dr-content {
+        padding: 0 50px;
+    }
+
+    .row .footer-departments, .row .footer-services, .row .footer-links, .row .footer-clinic-timming {
+        padding: 12px 24px;
+    }
+    .row .footer-clinic-timming {
+        width: 50%;
     }
 }
 
@@ -497,6 +560,13 @@ form textarea {
     .upper-info-bar p {
         font-size: 14px;
     }
+    
+    /* .row .footer-departments, .row .footer-services, .row .footer-links, .row .footer-clinic-timming {
+        display: flex !important;
+        width: 50% !important;
+    }
+    .main-footer .footer-clinic-timming, .main-footer .footer-departments, .main-footer .footer-services, .main-footer .footer-links{
+    } */
 }
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
