@@ -20,7 +20,12 @@
 nav {
     background-color: var(--white);
 }
-
+.nav-item a:hover {
+    color: var(--main-sky-blue);
+}
+.nav-item a.active {
+    color: var(--main-sky-blue) !important;
+}
 .container-bar {
     display: inline-block;
     cursor: pointer;
@@ -311,9 +316,11 @@ form input, form textarea {
 }
 form input {
     margin-bottom: 26px;
+    width: 80%;
 }
 form textarea {
     resize: none;
+    width: 100%;
 }
 .user-info-form p {
     margin-top: 5px;
@@ -324,6 +331,7 @@ form textarea {
     border-radius: 20px;
     padding: 5px 12px;
     margin-top: 18px;
+    width: 100%;
 }
 .i-health-info {
     width: 45%;
@@ -334,7 +342,7 @@ form textarea {
 }
 .i-health-info .row p {
     margin-bottom: 0;
-    margin-left: 24px;
+    margin-left: 30px;
 }
 span i {
     font-size: 30px;
@@ -521,9 +529,13 @@ span h5 {
 
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    .main-footer .footer-departments, .main-footer .footer-services, .main-footer .footer-links, .main-footer .footer-clinic-timming {
-        margin: 0 auto !important;
-        width: 100% !important;
+    .hero-section-content p {
+        font-size: 11px;
+        margin-bottom: 0 !important;
+    }
+    .home-image-btn-wrapper a {
+        font-size: 10px !important;
+        padding: 4px 8px !important;
     }
     
 }
@@ -554,7 +566,7 @@ span h5 {
     }
     .about-us-wrapper .about-us-content-wrapper {
         width: 100% !important;
-        padding: 24px 0 0 35px;
+        padding: 24px 0 0 40px;
     }
 
     .our-mission-section-wrapper {
@@ -562,7 +574,7 @@ span h5 {
     }
     .our-mission-section-wrapper .our-mission-text-wrapper {
         width: 90%;
-        padding: 0 0 0 30px;
+        padding: 0 0 0 5%;
     }
     .our-mission-section-wrapper .our-missin-video {
         width: 90%;
@@ -574,6 +586,21 @@ span h5 {
     }
     .our-missin-video i p {
         font-size: 10px;
+    }
+
+    .home-contact-section-wrapper .container-my {
+        display: block !important;
+    }
+    .home-contact-form {
+        width: 80%;
+        margin: 0 10%;
+    }
+    .i-health-info {
+        margin: 18px 10%;
+        width: 80%;
+    }
+    .message-form .form-submit {
+        width: 80%;
     }
 
     .client-testominal-cards-wrapper {
@@ -592,7 +619,7 @@ span h5 {
 
 
     .our-services-cards-wrapper {
-        padding: 0 12px;
+        padding: 0 40px;
     }
 
     .team-dr-content {
@@ -606,12 +633,11 @@ span h5 {
         padding: 0 50px;
     }
 
-    .row .footer-departments, .row .footer-services, .row .footer-links, .row .footer-clinic-timming {
-        padding: 12px 24px;
+    .main-footer {
+        padding: 20px 40px;
     }
-    .row .footer-clinic-timming {
-        width: 50%;
-    }
+
+    
 }
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
@@ -624,12 +650,22 @@ span h5 {
         margin-bottom: 36px;
     }
     
-    /* .row .footer-departments, .row .footer-services, .row .footer-links, .row .footer-clinic-timming {
-        display: flex !important;
-        width: 50% !important;
+    form {
+        display: block !important;
+        margin: 0 auto !important;
     }
-    .main-footer .footer-clinic-timming, .main-footer .footer-departments, .main-footer .footer-services, .main-footer .footer-links{
-    } */
+    form input, form textarea {
+        width: 80%;
+        margin: 8px 10% !important;
+    }
+    form .user-info-form p {
+        display: none;
+    }
+    .message-form .form-submit {
+        width: 80%;
+    }
+
+  
 }
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
@@ -673,6 +709,14 @@ span h5 {
         padding: 3px 6px;
     }
 
+}
+
+@media (max-width: 577.98px) {
+    .main-footer .footer-departments, .main-footer .footer-services, .main-footer .footer-links, .main-footer .footer-clinic-timming {
+        width: 80% !important;
+        margin: 24px 10% !important;
+        text-align: center !important;
+    }
 }
 
 @media (max-width: 1150px) {

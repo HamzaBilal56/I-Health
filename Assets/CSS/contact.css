@@ -19,6 +19,12 @@
 nav {
     background-color: var(--white);
 }
+.nav-item a:hover {
+    color: var(--main-sky-blue);
+}
+.nav-item a.active {
+    color: var(--main-sky-blue) !important;
+}
 
 /* ====HOME SECTION STYLES==== */
 .contact-home-img {
@@ -118,7 +124,7 @@ nav {
 
 /* ====GENERIC CLASSES==== */
 .container-my {
-    width: 800px;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -151,6 +157,11 @@ nav {
     .map {
         padding: 0 12px;
     }
+
+    .main-footer {
+        padding: 20px 40px;
+    }
+
 }
 
 @media (max-width: 991.98px) {
@@ -161,4 +172,12 @@ nav {
 
 @media (max-width: 1199.98px) {
 
+}
+
+@media (max-width: 577.98px) {
+    .main-footer .footer-departments, .main-footer .footer-services, .main-footer .footer-links, .main-footer .footer-clinic-timming {
+        width: 80% !important;
+        margin: 24px 10% !important;
+        text-align: center !important;
+    }
 }

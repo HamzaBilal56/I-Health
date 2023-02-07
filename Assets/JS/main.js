@@ -8,6 +8,7 @@ start.addEventListener('click', function(){
   let i = document.getElementById('hide');
   i.style.display = 'none'
   
+  
   // let p = document.getElementById('hide');
   // p.style.display = 'none'
 })

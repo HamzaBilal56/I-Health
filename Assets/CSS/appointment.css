@@ -19,7 +19,12 @@
 nav {
     background-color: var(--white);
 }
-
+.nav-item a:hover {
+    color: var(--main-sky-blue);
+}
+.nav-item a.active {
+    color: var(--main-sky-blue) !important;
+}
 /* ====HOME SECTION STYLES==== */
 .appointment-home-img {
     position: relative;
@@ -55,6 +60,7 @@ nav {
 .meet-our-doctor-section-wrapper .meet-doctor-text-wrapper {
     width: 55%;
     padding-left: 100px;
+    padding-right: 20px;
 }
 .meet-our-doctor-section-wrapper .meet-doctor-images {
     width: 45%;
@@ -76,6 +82,10 @@ nav {
     text-decoration: none;
     padding: 6px 12px;
     border-radius: 16px;
+}
+.meet-doctor-images img:last-child {
+    margin-left: -60px;
+    margin-top: 60px;
 }
 
 /* ====APPOINTMENT SECTION STYLES==== */
@@ -143,6 +153,7 @@ form textarea {
 /* ===APPOINTMENT VIDEO WRAPPER=== */
 .appointment-video-wrapper video {
     margin-bottom: -40px;
+    margin-top: 24px;
 }
 
 /* ====FOOTER STYLES==== */
@@ -190,14 +201,19 @@ form textarea {
 
 /* ===GENERIC CLASSES=== */
 .container-my {
-    width: 800px;
+    width: 80%;
     margin: 0 auto;
 }
 
 
 
 @media (max-width: 575.98px) {
-
+    .our-experties-cards-wrapper {
+        display: block !important;
+    }
+    .experties-card {
+        margin: 12px 0 !important;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -209,40 +225,130 @@ form textarea {
         display: none;
     }
 
-    .appointment-form-wrapper .container-my {
-        display: block !important;
-    }
-    /* .container-my .appointment-contact-form-wrapper {
-        margin: 12px auto !important;
-    } */
-    .appointment-contact-form {
-        width: 100% !important;
-    }
     .appointment-contact-form form {
         display: block !important;
-        width: 80% !important;
-        text-align: center;        
+        margin: 0 10%;
     }
-    .our-experties-section-wrapper {
-        margin: 18px 0;
-        width: 100% !important;
+    form p {
+        display: none !important;
     }
-    .experties-card {
+    form input {
         width: 80% !important;
-        margin: 12px auto !important;
+    }
+    .message-form .form-submit {
+        width: 100%;
     }
 
     .main-footer {
-        padding: 12px 24px;
+        padding: 20px 40px;
     }
+
 }
 
 @media (max-width: 991.98px) {
     .upper-info-bar p {
         font-size: 14px;
     }
+
 }
 
 @media (max-width: 1199.98px) {
 
+}
+
+@media (max-width: 823.98px) {
+    .appointment-form-wrapper .container-my {
+        display: block !important;
+    }
+    .appointment-form-wrapper  .appointment-contact-form {
+        width: 80% !important;
+        margin: 0 10% !important;
+    }
+    .appointment-contact-form form {
+        width: 80% !important;
+        margin: 0 10% !important;
+    }
+    form .user-info-form {
+        width: 100% !important;
+    }
+    form .message-form {
+        width: 100% !important;
+    }
+    form input {
+        width: 80% !important;
+        margin-left: 10%;
+    }
+    form textarea {
+        width: 80% !important;
+        margin-left: 10%;
+    }
+    form p {
+        margin-left: 10%;
+    }
+    .appointment-form-wrapper .our-experties-section-wrapper {
+        width: 80% !important;
+        margin: 24px 10%;
+    }
+    .our-experties-cards-wrapper {
+        display: flex;
+    }
+    .experties-card {
+        margin: 0 12px;
+    }
+
+    .appointment-video-wrapper video {
+        margin-bottom: 20px;
+        padding: 0 12px;
+    }
+}
+
+@media (max-width: 1215.98px) {
+    .meet-our-doctor-section-wrapper .meet-doctor-text-wrapper {
+        width: 50% !important;
+        padding-left: 60px;
+    }
+    .meet-doctor-text-wrapper .meet-doctor-images {
+        width: 40% !important;
+    }
+    .meet-doctor-images img {
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 1099.98px) {
+    .meet-our-doctor-section-wrapper .meet-doctor-text-wrapper {
+        width: 40% !important;
+        padding-left: 60px;
+    }
+    .meet-doctor-text-wrapper .meet-doctor-images {
+        width: 30% !important;
+    }
+    .meet-doctor-images img {
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 919.98px) {
+    .meet-our-doctor-section-wrapper {
+        display: block !important;
+    }
+    .meet-our-doctor-section-wrapper .meet-doctor-text-wrapper {
+        width: 80% !important;
+        padding-left: 10%;
+        margin-bottom: 24px;
+    }
+    .meet-doctor-text-wrapper .meet-doctor-images {
+        width: 80% !important;
+    }
+    .meet-doctor-images img {
+        padding-left: 10% !important;
+    }
+}
+
+@media (max-width: 577.98px) {
+    .main-footer .footer-departments, .main-footer .footer-services, .main-footer .footer-links, .main-footer .footer-clinic-timming {
+        width: 80% !important;
+        margin: 24px 10% !important;
+        text-align: center !important;
+    }
 }
