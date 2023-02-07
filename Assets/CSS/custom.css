@@ -193,11 +193,29 @@ nav {
 }
 .our-missin-video {
     align-items: center;
+    position: relative;
 }
 .our-missin-video video {
     width: 100%;
 }
-
+.our-missin-video i {
+    position: absolute;
+    left: -8%;
+    bottom: 20%;
+    background-color: var(--green);
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 30px;
+    padding: 6px 10px;
+    align-items: center;
+    /* justify-content: center; */
+}
+.our-missin-video i p {
+    font-size: 12px;
+    margin-bottom: 0;
+    padding-left: 4px;
+}
 /* ======OUR SERVICES SECTION STYLES====== */
 .services-upper-text-wrapper {
     text-align: center;
@@ -309,8 +327,24 @@ form textarea {
 }
 .i-health-info {
     width: 45%;
-    padding-left: 24px;
+    padding-left: 32px;
 }
+.i-health-info span {
+    margin-top: 12px;
+}
+.i-health-info .row p {
+    margin-bottom: 0;
+    margin-left: 24px;
+}
+span i {
+    font-size: 30px;
+    padding-right: 8px;
+    color: var(--green);
+}
+span h5 {
+    margin-bottom: 0;
+}
+
 
 
 /* ====CLIENT TESTOMINAL SECTION STYLES==== */
@@ -374,8 +408,9 @@ form textarea {
     color: var(--green);
 }
 .blog-card {
-    position: relative;
     margin-top: 24px;
+    position: relative;
+    overflow: hidden;
 }
 .blog-card img {
     width: 100%;
@@ -385,13 +420,11 @@ form textarea {
     position: absolute;
     background-color: var(--green);
     color: var(--white);
-    bottom: 48%;
+    bottom: 40%;
     right: 5%;
-    transform: translateY(-48%);
     border-radius: 12px;
     padding: 3px 12px;
     border: none;
-
 }
 .blog-card-cap h5, .blog-card-cap p {
     padding: 0 0 0 16px;
@@ -524,6 +557,25 @@ form textarea {
         padding: 24px 0 0 35px;
     }
 
+    .our-mission-section-wrapper {
+        display: block;
+    }
+    .our-mission-section-wrapper .our-mission-text-wrapper {
+        width: 90%;
+        padding: 0 0 0 30px;
+    }
+    .our-mission-section-wrapper .our-missin-video {
+        width: 90%;
+        padding: 24px 0 0 30px;
+    }
+    .our-missin-video i {
+        font-size: 24px;
+        margin-left: 36px;
+    }
+    .our-missin-video i p {
+        font-size: 10px;
+    }
+
     .client-testominal-cards-wrapper {
         padding: 0 50px;
     }
@@ -546,6 +598,13 @@ form textarea {
     .team-dr-content {
         padding: 0 50px;
     }
+    .team-dr-content .doctor-team-img-caption {
+        display: flex !important;
+    }
+
+    .blog-card {
+        padding: 0 50px;
+    }
 
     .row .footer-departments, .row .footer-services, .row .footer-links, .row .footer-clinic-timming {
         padding: 12px 24px;
@@ -559,6 +618,10 @@ form textarea {
 @media (max-width: 991.98px) {
     .upper-info-bar p {
         font-size: 14px;
+    }
+
+    .our-missin-video i {
+        margin-bottom: 36px;
     }
     
     /* .row .footer-departments, .row .footer-services, .row .footer-links, .row .footer-clinic-timming {
@@ -610,4 +673,20 @@ form textarea {
         padding: 3px 6px;
     }
 
+}
+
+@media (max-width: 1150px) {
+    .team-dr-content .doctor-team-img-caption {
+        display: block !important;
+        text-align: center !important;
+    }
+    .doctor-team-img-caption .doctor-profile-btn {
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 1262px) {
+    .blog-card button {
+        display: none;
+    }
 }
